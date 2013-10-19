@@ -302,6 +302,7 @@ pet2.each{ |key, value| puts "#{key}\t#{value}" }       # "\t" is the code for a
 #  One last thing, if you are looking for an online Ruby tutorial, I HIGHLY recommend
 # "why's (poignant) guide to Ruby" which is free online, and guaranteed to be absolutely
 # nothing like any other programming tutorial ever. I won't spoil anything, but suffice
-# to say that Why captures and indeed embodies the style and culture of Ruby. I recommend it
-# even to people who don't want to learn Ruby. 
+# to say that Why (the Lucky Stiff) captures and indeed embodies the style and culture of Ruby.
+# I recommend it even to people who don't want to learn Ruby. Seriously. Just read the first
+# two pages.
 #                   [ http://mislav.uniqpath.com/poignant-guide/ ]
