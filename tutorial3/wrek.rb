@@ -2,17 +2,6 @@ require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 
-#require 'lastfm'
-#lastfm = Lastfm.new(api_key, api_secret)
-#token = lastfm.auth.get_token
-#lastfm.session = lastfm.auth.get_session(:token => token)['key']
-
-#lastfm.track.love(:artist => 'Hujiko Pro', :track => 'acid acid 7riddim')
-#lastfm.track.scrobble(:artist => 'Hujiko Pro', :track => 'acid acid 7riddim')
-#lastfm.track.update_now_playing(:artist => 'Hujiko Pro', :track => 'acid acid 7riddim')
-
-
-
 
 #Get a list of songs played on WREK today
 
@@ -22,7 +11,9 @@ plays = []      #a set of hashes
 page = Nokogiri::HTML (open(url))
 
 #find the table with id=playlist, then for each tr tag,
-#   grab each child node one at a time and 
+#   grab each child node one at a time and store it to
+#   a hash, and put that hash in the plays array
+
 page.css("#playlist").css("tr").each {|tr|
     play = {time:   tr.children[0].text, 
             title:  tr.children[1].text, 
@@ -42,4 +33,3 @@ for p in plays do
     puts "SONG:"
     p.each {|key,value| puts "\t#{key}:\t\t#{value}"}
 end
-
