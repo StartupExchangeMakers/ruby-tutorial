@@ -13,4 +13,4 @@ please reach out to me or to Brendan. Happy Rubying!!
 cheers,
 
 Julian
-cknight7@gatech.edu  --  @rabidaudio
+cknight7@gatech.edu  --  https://github.com/rabidaudio
