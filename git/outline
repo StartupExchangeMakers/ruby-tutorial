@@ -1,0 +1,117 @@
+BRING UBUNTU
+make slide deck overview
+	course stuff
+	linux+VM
+	git+GitHub
+break off to install VM+Ubuntu
+install and set up git
+
+
+
+Crash Course Overview
+This is supposed to be an into to development. If you are interested
+in learning a lot through hands-on experience, join the makers team.
+because the truth is, and i'm sure everyone is sick of me saying this
+over and over, but the best way to learn really is to get your hands
+dirty. I imagine pretty much all of you have at least taken 1371, and
+many of you probably have experience in other languages. If you don't,
+I recommend you google for a Python tutorial and go through it, and
+you should pick up the basics really fast. If you know variables, loops,
+and arrays, you already know pretty much everything there is to know.
+If you know about object-oriented programming (classes and methods),
+then you really do know everything already. Everything else is learning
+the syntax of whatever language you are working with and learning to code
+better (more efficiently and more elegantly).
+That's why these crash courses are going to be more about Tips, Tools, Traps
+not how to code
+
+1. Where do I start?
+=Dev environment
+for Windows: install linux
+why? Windows is good for developing for windows (VS, .NET, etc). 
+Tutorials are generally written for unix-likes
+FOSS
+likely webservers etc are going to run on linux, so it's another skill
+Git for Windows sux (really, it just pretends to be linux)
+_example:
+virtualbox
+bash guide -> http://vic.gedris.org/Manual-ShellIntro/1.2/ShellIntro.pdf
+=git + GitHub
+git is code management software
+Linus Torvalds circa 2005 for managing the kernel
+FOSS
+sudo apt-get install git
+GitHub
+startup circa 2011, cloud repository for code
+as many FOSS repos as you want, pay for private
+BitBucket allows private repos for free, pay to have 5?+ peps
+==Vocab
+repository - place for your code. basically your project
+commit - changes to the code
+branches
+clone+fork
+
+Clone
+To grab a complete copy of another user's repository when you do not have a local copy of the repository already established, you will use:
+git clone <URL>
+Running git clone <URL> will automatically create a new subfolder, fetch the contents of the repository into this subfolder, then create and checkout the default branch (usually "master"). If there are other branches on the remote you will need to create a local branch to work in, for example git checkout -b fix_stuff origin/fix_stuff
+
+Fetch
+If you already have a local repository with a remote set up for the desired project, you can grab all branches and tags for the existing remote using git fetch <REMOTENAME>. By default, git clone will create a remote named origin pointing to the URL you cloned from. Fetch does not make any changes to local branches, so you will need to merge a remote branch with a paired local branch to incorporate newly fetch changes.
+
+Pull
+Similar to git fetch, you can use git pull <REMOTENAME> <BRANCHNAME> to fetch a specific branch and merge it into your current local branch. For one-time pulls from other users' repositories, you can use a URL in place of a remote name.
+Because pull potentially performs a merge on the retrieved changes, you should ensure that your working tree and index are clean before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to abort the merge, you can use git merge --abort to take the branch back to the state it was in before you pulled.
+
+==howto
+git init
+git status
+Create repo on GitHub
+git clone
+--make changes--
+commit
+push
+
+2. Basic Web stuff
+XML - trees, tags, attributes,
+HTML - basic structure
+=common tags
+<a>, <p>, <div>, <span>, <img>, <hX>
+see w3schools for more 
+=CSS
+what is?
+style attributes
+style tags in HTML
+separate sheets
+selectors
+=HTML forms
+<form>, <input>, <button>
+submission: GET and POST
+=basic JS
+<script>
+vars, functions, other good stuff
+Debugging: Firebug/chrome, jsfiddle
+
+3. jQuery: more better client-side business
+jQuery is a javascript library. it is just a lot of JS
+review selectors
+javascript as OOP, functions as arguments
+declaring functions inside lines
+what that means for syntax
+$ vs jQuery
+AJAX - remember GET and POST?
+jquery extensions: UI, mobile, plugins
+jsfiddle !!!
+
+4. Server-side intro
+=PHP
+=Databases: SQL
+mysql, postgres, sqlite
+=using PHP for AJAX providers
+
+5. Rails
+REST
+MVC
+the rails way
+
+6. Mobile dev

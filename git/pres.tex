@@ -1,0 +1,90 @@
+\documentclass[mathserif]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+%\usepackage{qtree}
+%\usepackage{amssymb, amsthm}
+\usetheme{default}
+\title[sX Maker Crash Course]{Development Crash Course\\ \large Development Environment and git}
+\author{Charles Julian Knight}
+\institute{Startup Exchange - Georgia Tech}
+\date{\today}
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+\begin{itemize}
+\item sX Makers
+\item Crash course
+\item Tips, Tools, and Traps
+\item Variables, conditionals, loops, arrays?
+\pause \item You already know how to code*
+\item Syntax and algorithms
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Where do I start?}
+Development Environment\\
+\vspace{.5cm}
+\begin{itemize}
+\item Unix-like (Linux or OSX)
+\item Why not Windows?
+\item Virtualbox
+\item Ubuntu
+\item Command line introduction:\\ {\tiny \url{http://vic.gedris.org/Manual-ShellIntro/1.2/ShellIntro.pdf}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{git and GitHub}
+git\\
+\begin{itemize}
+\item SCM and version control
+\item History: 2005
+\item kernel
+\item \texttt{sudo apt-get install git}
+\end{itemize}
+\vspace{.3in}
+\pause
+GitHub\\
+\begin{itemize}
+\item Cloud repositories
+\item Startup, 2011
+\item restrictions
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Vocabulary}
+\begin{itemize}
+\item repository - a place to store code
+\item commit - changes to the code
+\item branch - separate series of commits
+\item clone vs. fetch vs. pull
+\begin{itemize}
+  \item clone - download and create a local repository
+  \item fetch - download current branches to existing local repository
+  \item pull - download the current remote branch and merge it with current local branch
+\end{itemize}
+\item fork - create a new repository based on existing
+\item {\url{http://git-scm.com/book/en/}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Basic Usage}
+\texttt{\small
+git clone https://github.com/<username>/<repository>.git\\
+git checkout -b <branch\_name>\\
+<make changes>\\
+git status\\
+git add .\\
+git commit\\
+git merge <branch\_name>\\
+git push origin master\\
+}
+\vspace{.3in}
+\url{http://try.github.io}
+\end{frame}
+
+\end{document}
